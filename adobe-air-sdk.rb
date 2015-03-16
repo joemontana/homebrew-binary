@@ -6,6 +6,7 @@ class AdobeAirSdk < Formula
   version "17.0.0.124"
 
   conflicts_with "adobe-air-sdk-flex"
+  depends_on "openssl"
 
   def install
     rm_f Dir["bin/*.bat"]
